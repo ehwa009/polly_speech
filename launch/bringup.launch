@@ -1,5 +1,8 @@
 <launch>
-    <node name="polly_speech" type="polly_speech_node.py" pkg="polly_speech" output="screen">
+    <node name="polly_speech_eng" type="polly_speech_node.py" pkg="polly_speech" output="screen">
         <param name="config_file" value="$(find polly_speech)/config/config.yaml" />
+    </node>
+    <node name="polly_speech_kor" type="polly_speech_node.py" pkg="polly_speech" output="screen">
+        <param name="config_file" value="$(find polly_speech)/config/config_kor.yaml" />
     </node>
 </launch>
